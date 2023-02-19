@@ -11,6 +11,7 @@ const rawBurst = {
 }
 const burst = new mojs.Burst(rawBurst)
 const intervalBurst = new mojs.Burst(rawBurst)
+const blueBox = document.querySelector("#gift")
 
 function bursty(x, y) {
   burst.tune({
@@ -32,7 +33,10 @@ function randomizedConfetti() {
   intervalBurst.replay();
 }
 
-function openLid() {
+function showGift() {
+  blueBox.querySelector(".lid").classList.add("open-lid")
+  blueBox.querySelector(".bow").classList.add("open-bow")
+  document.querySelector("#fairy").classList.add("gift")
 }
 
 Splitting();
@@ -41,5 +45,8 @@ setInterval(() => randomizedConfetti(), 800);
 
 document.addEventListener("click", (event) => {
   bursty(event.pageX, event.pageY);
+});
+blueBox.addEventListener("click", (event) => {
+  showGift();
 });
 

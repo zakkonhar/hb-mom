@@ -1,0 +1,44 @@
+.comics-dialog {
+  font-family: "Arial";
+  font-style: italic;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 40px;
+  background-color: #fff;
+  -webkit-filter: drop-shadow(0 4px 0 #65c1ff);
+  filter: drop-shadow(0 4px 0 #65c1ff);
+  position: absolute;
+  top: -220px;
+  left: -240px;
+}
+.comics-dialog:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Styles for dialog box */
+.comics-dialog {
+  width: 360px;
+  height: 70px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.comics-dialog:after {
+  width: 200px;
+  height: 70px;
+  right: -32px;
+  bottom: -45px;
+  border-right: 90px solid #fff;
+  -moz-border-radius-bottomright: 370px 200px;
+  -webkit-border-bottom-right-radius: 370px 200px;
+  border-bottom-right-radius: 370px 200px;
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}

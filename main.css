@@ -211,11 +211,11 @@ body {
   background-image: radial-gradient(transparent 20%, transparent 20%), radial-gradient(transparent 20%, transparent 20%);
   background-color: #1BB5FE;
 }
-.blue .ribbon {
+
+.present.blue .ribbon {
   background: #3DDC81;
-}
-.blue .ribbon::before {
-  top: 21%;
+  top: 27px;
+  height: calc(100% - 35px);
 }
 .blue .bow {
   background: #3DDC81;
